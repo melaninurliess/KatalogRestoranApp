@@ -26,7 +26,7 @@ Before(({ I }) => {
     const firstRestaurant = locate('.restaurant-list__content a').first();
     const firstRestaurantTitle = await I.grabTextFrom(firstRestaurant);
     I.click(firstRestaurant);
-    I.click(locate('.restaurant-list__content a').first());
+    //I.click(locate('.restaurant-list__content a').first());
 
     I.waitForElement('#likeButton', 5);
     I.seeElement('#likeButton');
